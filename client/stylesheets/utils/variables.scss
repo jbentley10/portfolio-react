@@ -1,0 +1,31 @@
+/* Fonts */
+
+// Header
+$header-font-family: 'Montserrat', sans-serif;
+$header-color: #fff;
+
+// Subtitle
+$subtitle-font-family: 'Open Sans', sans-serif;
+$subtitle-color: #555;
+
+// Paragraph Color
+$paragraph-font-family: 'Open Sans', sans-serif;
+$paragraph-color: #333;
+
+// Quotes
+$strong-font-family: 'Open Sans', sans-serif;
+$strong-color: #333;
+
+/* Colors */
+// Header
+$header-background-color: #000;
+// iD Tech
+$idtech-background-color: rgba(18, 166, 244, .5);
+// LeapFrog
+$leapfrog-background-color: rgba(130, 190, 66, .5);
+
+/* Asset Path */
+$assetPath: "../../assets/images";
+
+/* Images */
+$header-background-image: url(#{$assetPath}/welcome/me-looking-2.jpg);

@@ -1,0 +1,11 @@
+#message {
+    padding: 3em 3em 6em 3em;
+
+    .container {
+      margin-top: 5em;
+
+      &:last-of-type {
+        text-align: center;
+      }
+    }
+}

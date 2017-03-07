@@ -1,0 +1,18 @@
+// Import utility sass
+@import 'utils/fonts';
+@import 'utils/variables';
+
+// Import animations sass
+@import 'animations/animations';
+
+// Import base sass
+@import 'base/base';
+
+// Import Component Sass
+@import 'components/header';
+@import 'components/about-me';
+@import 'components/ucsc';
+@import 'components/leapfrog';
+@import 'components/idtech';
+@import 'components/personal-projects';
+@import 'components/message';
