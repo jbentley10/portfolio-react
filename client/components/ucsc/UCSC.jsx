@@ -22,7 +22,7 @@ export default class UCSC extends Component {
                         {/* <img src={PrototypeTutorial} /> */}
                         <img src={Cocooned1} />
                     </div>
-                    <div className="col-xs-6">
+                    <div className="col-xs-6 section-title">
                         <h3>My journey began with game development</h3>
                         <span>University of California, Santa Cruz  |  2010-2014</span>
                     </div>

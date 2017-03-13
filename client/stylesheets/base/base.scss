@@ -26,16 +26,6 @@ section {
     }
   }
 
-  a {
-    transition: .5s;
-    border-bottom: 1px solid #000;
-
-    &:hover {
-      animation: underline 1s infinite;
-      border-bottom: 3px solid #000;
-    }
-  }
-
   span {
     font-family: $subtitle-font-family;
     color: $subtitle-color;
@@ -44,6 +34,7 @@ section {
   p {
     font-family: $paragraph-font-family;
     color: $paragraph-color;
+    line-height: 2.5em;
   }
 
   strong {
@@ -63,6 +54,55 @@ section {
 
       .col-xs-3:last-of-type {
         float: right;
+      }
+
+      .section-title {
+        padding: 2vh 15vw;
+        line-height: 3em;
+      }
+    }
+  }
+
+  .quote-container {
+    padding: 20vh 15vw;
+    line-height: 2em;
+
+    span:first-of-type {
+      color: $strong-color;
+    }
+  }
+}
+
+.text-link {
+  margin: 0 5vw 0 0;
+  background: transparent;
+
+  a {
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    color: #000;
+
+    span {
+      font-family: $link-font-family;
+      color: $link-color;
+      font-weight: 500;
+      background-image: linear-gradient(180deg, transparent 65%, #333 0);
+      background-size: 0% 100%;
+      -moz-transition: 0.3s cubic-bezier(0.5, 0.61, 0.355, 1) background;
+      -o-transition: 0.3s cubic-bezier(0.5, 0.61, 0.355, 1) background;
+      -ms-transition: 0.3s cubic-bezier(0.5, 0.61, 0.355, 1) background;
+      -webkit-transition: 0.3s cubic-bezier(0.5, 0.61, 0.355, 1) background;
+      transition: 0.3s cubic-bezier(0.5, 0.61, 0.355, 1) background;
+      background-repeat: no-repeat;
+      padding-bottom: 0;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      span {
+        background-size: 100% 100%;
       }
     }
   }

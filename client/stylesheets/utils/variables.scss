@@ -8,6 +8,10 @@ $header-color: #fff;
 $subtitle-font-family: 'Open Sans', sans-serif;
 $subtitle-color: #555;
 
+// Links
+$link-font-family: 'Jura', sans-serif;
+$link-color: #000;
+
 // Paragraph Color
 $paragraph-font-family: 'Open Sans', sans-serif;
 $paragraph-color: #333;
@@ -30,4 +34,3 @@ $leapfrog-background-color: rgba(130, 190, 66, .2);
 $assetPath: "../../assets/images";
 
 /* Images */
-$header-background-image: url(#{$assetPath}/welcome/me-looking-2.jpg);

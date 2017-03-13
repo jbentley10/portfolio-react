@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const Email = 'mailto:jwbentle@gmail.com';
+
 export default class Message extends Component {
   render() {
     return (
@@ -13,7 +15,12 @@ export default class Message extends Component {
               If you would like to take your project to the next level, I would love to hear from you!
             </span></p>
             <p><span>
-              Drop me a line at <strong><a href="mailto:jwbentle@gmail.com">jwbentle@gmail.com</a></strong>
+              Drop me a line at &nbsp;
+              <strong className="text-link">
+                <a href={Email}>
+                  <span>jwbentle@gmail.com</span>
+                </a>
+              </strong>
             </span></p>
             <div className="container">
                 <div className="row">

@@ -1,8 +1,4 @@
 #welcome {
-  height: 100vh;
-  // background: $header-background-color $header-background-image cover no-repeat center;
-  background-color: $header-background-color;
-
   .blinking-cursor {
     -webkit-animation: blink 1s infinite;
     animation: blink 1s infinite;

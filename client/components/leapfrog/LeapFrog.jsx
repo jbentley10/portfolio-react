@@ -6,6 +6,9 @@ const KidTesting = require('../../assets/images/explore/tractor-tipping/kid-test
 const TractorTipping5 = require('../../assets/images/explore/tractor-tipping/5.png');
 const TractorTipping1 = require('../../assets/images/explore/tractor-tipping/1.png');
 
+// Links
+const TractorTippingLink = "https://leapfrog.com";
+
 export default class LeapFrog extends Component {
   render() {
     return (
@@ -24,7 +27,7 @@ export default class LeapFrog extends Component {
                     <div className="col-xs-3">
                       <img src={TTGameFlow} />
                     </div>
-                    <div className="col-xs-6">
+                    <div className="col-xs-6 section-title">
                       <div>
                         <h3>At LeapFrog, I developed my passion for user testing and interaction design</h3>
                         <span>Game Design Intern  |  LeapFrog  |  2014</span>
@@ -47,13 +50,21 @@ export default class LeapFrog extends Component {
                   </p>
               </div>
               <div className="row">
-                <strong><a>Tractor Tipping</a></strong>
+                <strong className="text-link">
+                  <a href={TractorTippingLink}>
+                    <span>Tractor Tipping</span>
+                  </a>
+                </strong>
+                <br />
               </div>
-              <div className="row leapfrog-quote">
+            </div>
+            <div className="container quote-container">
+              <blockquote className="row leapfrog-quote">
                   <strong>
                       “I worked closely with John during his internship at Leapfrog. He quickly became a highly productive member of our design team, taking on the wide array of tasks we handed him on a daily basis with creativity and enthusiasm. His work was thorough, he took feedback well, and he was a pleasure to work with.”
                   </strong>
-              </div>
+                  <br />
+              </blockquote>
               <div className="row">
                   <span>- Sandy Spanger</span><span> Senior Game Designer at Anki, Inc. </span>
               </div>
