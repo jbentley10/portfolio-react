@@ -2,6 +2,37 @@ import React, { Component } from 'react';
 const MeCoding = require('../../assets/images/welcome/me-coding.jpg');
 const UserTesting = require('../../assets/images/explore/user-testing.png');
 
+// Styles
+let MovingImage = { transform: 'translateY(0px)' };
+let itemTranslate = 0;
+
+// window.addEventListener('scroll', (event) => {
+//   let scrollTop = event.srcElement.body.scrollTop,
+//       itemTranslate = Math.min(0, scrollTop/3 - 60) + .5;
+//
+//   console.log("Item translate: " + itemTranslate);
+//
+//   MovingImage.transform = 'translateY(' + itemTranslate + 'px)';
+// });
+
+function componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+};
+
+function componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+};
+
+function handleScroll(event) {
+    let scrollTop = event.srcElement.body.scrollTop;
+    let itemTranslate = Math.min(0, scrollTop/3 - 60);
+    console.log("item translate: " + itemTranslate);
+
+    this.setState({
+      transform: itemTranslate
+    });
+};
+
 export default class AboutMe extends Component {
   render() {
     return (
@@ -19,7 +50,7 @@ export default class AboutMe extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-xs-3">
-                        <img src={MeCoding} alt="John Coding" />
+                        <img src={MeCoding} alt="John Coding" style={MovingImage}/>
                     </div>
                     <div className="col-xs-6"></div>
                     <div className="col-xs-3">
