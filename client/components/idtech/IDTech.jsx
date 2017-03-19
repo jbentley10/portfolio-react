@@ -26,7 +26,9 @@ export default class IDTech extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-xs-3">
-                      <img src={StyleGuide1} />
+                      <a href={StyleGuideLink} target="blank">
+                        <img src={StyleGuide1} />
+                      </a>
                     </div>
                     <div className="col-xs-6 section-title">
                         <h3>
@@ -38,11 +40,15 @@ export default class IDTech extends Component {
                         </span>
                     </div>
                     <div className="col-xs-3">
-                      <img src={HallOfFame} />
+                      <a href={CareersLink} target="blank">
+                        <img src={HallOfFame} />
+                      </a>
                     </div>
                 </div>
                 <div className="row">
-                      <img src={Next} />
+                  <a href={NextLink} target="blank">
+                    <img src={Next} />
+                  </a>
                 </div>
               </div>
               <div className="container">
@@ -55,17 +61,17 @@ export default class IDTech extends Component {
                   </div>
                   <div className="row">
                     <strong className="text-link">
-                      <a href={NextLink}>
+                      <a href={NextLink} target="blank">
                         <span>/Next</span>
                       </a>
                     </strong>
                     <strong className="text-link">
-                      <a href={StyleGuideLink}>
+                      <a href={StyleGuideLink} target="blank">
                         <span>Style Guide</span>
                       </a>
                     </strong>
                     <strong className="text-link">
-                      <a href={CareersLink}>
+                      <a href={CareersLink} target="blank">
                         <span>Careers Page</span>
                       </a>
                     </strong>

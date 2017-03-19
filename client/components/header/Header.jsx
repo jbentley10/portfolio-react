@@ -7,6 +7,7 @@ const HeaderBackground = require('../../assets/images/welcome/me-looking-2.jpg')
 const headerBackgroundStyle = {
   backgroundImage: 'url(' + HeaderBackground + ')',
   backgroundSize: 'cover',
+  backgroundPosition: '50%',
   height: '100vh',
 };
 

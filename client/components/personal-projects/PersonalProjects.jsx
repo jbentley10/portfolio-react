@@ -6,6 +6,9 @@ const TheSpot = require('../../assets/images/explore/the-spot/the-spot-main.png'
 const Aurora = require('../../assets/images/explore/aurora/aurora.png');
 const LinksComputer = require('../../assets/images/explore/links-computer/links-computer.png');
 
+// Load links
+const GroovesGrindsLink = "https://johnbentley.com/grooves-grinds";
+
 
 export default class PersonalProjects extends Component {
   render() {
@@ -23,7 +26,9 @@ export default class PersonalProjects extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-xs-3">
-                      <img src={GroovesGrinds} />
+                      <a href={GroovesGrindsLink} target="blank">
+                        <img src={GroovesGrinds} />
+                      </a>
                       <img src={LinksComputer} />
                     </div>
                     <div className="col-xs-6">

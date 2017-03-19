@@ -2,6 +2,36 @@ body {
   margin: 0;
 }
 
+figure {
+  background-size: 100%;
+  background-position: 50% center;
+  opacity: 1;
+  margin: 0;
+  width: 360px;
+  height: 200px;
+  transition: all .3s ease-out;
+
+  p {
+    width: 0%;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease-out;
+
+    &:hover {
+      opacity: 1;
+      width: 100%;
+      text-align: center;
+      transition: all .3s ease-in;
+    }
+  }
+
+  &:hover {
+    opacity: .2;
+    background-size: 200%;
+    transition: all .3s ease-in;
+  }
+}
+
 section {
   img {
     width: 250px;
@@ -86,7 +116,7 @@ section {
     span {
       font-family: $link-font-family;
       color: $link-color;
-      font-weight: 500;
+      font-weight: $link-font-weight;
       background-image: linear-gradient(180deg, transparent 65%, #333 0);
       background-size: 0% 100%;
       -moz-transition: 0.3s cubic-bezier(0.5, 0.61, 0.355, 1) background;
@@ -104,6 +134,38 @@ section {
       span {
         background-size: 100% 100%;
       }
+    }
+  }
+}
+
+// When hovering over an image
+.image-wrap {
+  height: 200px;
+  background-color: #333;
+  width: 0%;
+  transition: .3s ease-in;
+  position: relative;
+
+  &:before {
+    content: "Cocooned";
+    position: absolute;
+    font-size: 2em;
+    top: 15px;
+    left: 0;
+    opacity: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: all .3s;
+  }
+
+  &:hover {
+    width: 360px;
+
+    &:before {
+      opacity: 1;
+      left: 70px;
+      transition: all .3s;
     }
   }
 }
